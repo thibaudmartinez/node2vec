@@ -1,0 +1,31 @@
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: "3.7"
+    - run: |
+        pip install $(grep -E "mypy|flake8" requirements.txt)
+        make checks
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+        - "3.7"
+        - "3.8"
+        - "3.9"
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - run: |
+        pip install -r requirements.txt
+        python setup.py build
+        pip install .
+        make tests

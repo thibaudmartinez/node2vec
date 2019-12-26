@@ -50,7 +50,7 @@ the Internet: a reference [Python implementation](https://github.com/aditya-grov
 and a high performance C++ implementation included in 
 [Stanford Network Analysis Project (SNAP)](http://snap.stanford.edu/index.html).
 This project aims at bringing together the best of the two implementations.
-It uses node2vec SNAP implementation as a high performance backend for simulating the 
+It uses node2vec SNAP implementation as a high performance backend to simulate the 
 random walks on the graph. [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html)
 is used to compute the node embeddings. Finally, the library can be manipulated through
 an easy-to-use Python API.
@@ -59,14 +59,14 @@ an easy-to-use Python API.
 
 ### Prerequisites
 
-* Linux 64bits
-* [Python 3.7+](https://www.python.org/downloads/)
-* [GCC 8](https://gcc.gnu.org/gcc-8/changes.html) 
+* Linux 64 bits
+* [Python 3.7, 3.8 or 3.9](https://www.python.org/downloads/)
+* [GCC >= 8](https://gcc.gnu.org/gcc-8/changes.html) 
 
 ### Installation
 
 ````bash
-pip install https://github.com/thibaudmartinez/node2vec/releases/download/0.1.0/node2vec-0.1.0-cp37-cp37m-linux_x86_64.whl
+pip install https://github.com/thibaudmartinez/node2vec/releases/download/v0.1.0/node2vec-0.1.0-cp37-cp37m-linux_x86_64.whl
 ````
 
 ## Usage
@@ -325,8 +325,18 @@ more efficiency.*
 
 ## Building from source
 
+Clone the repository.
 ````bash
 git clone https://github.com/thibaudmartinez/node2vec.git
+````
+
+Install [pybind11](https://github.com/pybind/pybind11).
+````bash
+pip install $(grep pybind11 requirements.txt)
+````
+
+Build and install node2vec.
+````
 pip install ./node2vec
 ````
 
@@ -336,7 +346,7 @@ If you encounter a bug, please [fill an issue](https://github.com/thibaudmartine
 
 ## Acknowledgments
 
-Thank you to the people behind those awesome libraries that are used extensively in
+Many thanks to those behind these awesome libraries that are used extensively in
 this project:
 
 * [SNAP](http://snap.stanford.edu/)

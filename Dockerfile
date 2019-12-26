@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:3.7-slim-bullseye
 
 # Install the notebook package
 RUN pip install --no-cache --upgrade pip && \
@@ -17,10 +17,10 @@ WORKDIR ${HOME}
 
 # Install GCC 8
 RUN apt-get -y update && \
-    apt-get -y install gcc-8 g++-8 \
+    apt-get -y install gcc-10 g++-10 \
     && rm -rf /var/lib/apt/lists/*
-RUN ln -s $(which gcc-8) /usr/bin/gcc
-RUN ln -s $(which g++-8) /usr/bin/g++
+RUN ln -s $(which gcc-10) /usr/bin/gcc
+RUN ln -s $(which g++-10) /usr/bin/g++
 
 # Install node2vec library
 COPY . ${HOME}/node2vec
