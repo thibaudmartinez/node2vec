@@ -1,0 +1,5 @@
+*
+!node2vec/
+!src/
+!setup.py
+!*.ipynb

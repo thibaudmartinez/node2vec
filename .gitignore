@@ -1,0 +1,17 @@
+*.out
+*.o
+*.so
+out/
+build/
+.eggs/
+*.egg-info/
+dist/
+
+*.pyc
+__pycache__/
+
+# MyPy
+.mypy_cache/
+
+#Pytest
+.pytest_cache/
