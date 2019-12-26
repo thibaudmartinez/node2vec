@@ -66,7 +66,7 @@ an easy-to-use Python API.
 ### Installation
 
 ````bash
-pip install https://github.com/thibaudmartinez/node2vec/releases/download/0.1.0/node2vec-0.1.0-cp37-cp37m-linux_x86_64.whl
+pip install https://github.com/thibaudmartinez/node2vec/releases/download/v0.1.0/node2vec-0.1.0-cp37-cp37m-linux_x86_64.whl
 ````
 
 ## Usage
