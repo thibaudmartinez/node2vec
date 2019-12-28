@@ -325,9 +325,19 @@ more efficiency.*
 
 ## Building from source
 
+Clone the repository.
 ````bash
 git clone https://github.com/thibaudmartinez/node2vec.git
-pip install ./node2vec
+````
+
+Install [pybind11](https://github.com/pybind/pybind11).
+````bash
+pip install pybind11==2.4.3
+````
+
+Build and install node2vec.
+````
+CC=gcc-8 CXX=g++-8 pip install ./node2vec
 ````
 
 ## Reporting a bug
