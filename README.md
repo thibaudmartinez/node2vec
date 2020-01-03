@@ -50,7 +50,7 @@ the Internet: a reference [Python implementation](https://github.com/aditya-grov
 and a high performance C++ implementation included in 
 [Stanford Network Analysis Project (SNAP)](http://snap.stanford.edu/index.html).
 This project aims at bringing together the best of the two implementations.
-It uses node2vec SNAP implementation as a high performance backend for simulating the 
+It uses node2vec SNAP implementation as a high performance backend to simulate the 
 random walks on the graph. [Gensim Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html)
 is used to compute the node embeddings. Finally, the library can be manipulated through
 an easy-to-use Python API.
