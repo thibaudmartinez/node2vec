@@ -346,7 +346,7 @@ If you encounter a bug, please [fill an issue](https://github.com/thibaudmartine
 
 ## Acknowledgments
 
-Thank you to those behind these awesome libraries that are used extensively in
+Many thanks to those behind these awesome libraries that are used extensively in
 this project:
 
 * [SNAP](http://snap.stanford.edu/)
