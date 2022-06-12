@@ -67,12 +67,12 @@ an easy-to-use Python API.
 
 Python 3.8
 ````bash
-pip install https://github.com/thibaudmartinez/node2vec/releases/download/v0.2.0/node2vec-0.1.0-cp38-cp38-linux_x86_64.whl
+pip install https://github.com/thibaudmartinez/node2vec/releases/download/v0.3.0/node2vec-0.1.0-cp38-cp38-linux_x86_64.whl
 ````
 
 Python 3.9
 ````bash
-pip install https://github.com/thibaudmartinez/node2vec/releases/download/v0.2.0/node2vec-0.1.0-cp39-cp39-linux_x86_64.whl
+pip install https://github.com/thibaudmartinez/node2vec/releases/download/v0.3.0/node2vec-0.1.0-cp39-cp39-linux_x86_64.whl
 ````
 
 ## Usage
