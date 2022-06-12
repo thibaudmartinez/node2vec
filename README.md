@@ -60,7 +60,7 @@ an easy-to-use Python API.
 ### Prerequisites
 
 * Linux 64 bits
-* [Python 3.7, 3.8 or 3.9](https://www.python.org/downloads/)
+* [Python 3.8 or 3.9](https://www.python.org/downloads/)
 * [GCC >= 8](https://gcc.gnu.org/gcc-8/changes.html) 
 
 ### Installation
