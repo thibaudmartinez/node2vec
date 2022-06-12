@@ -1,4 +1,4 @@
-FROM python:3.7-slim-bullseye
+FROM python:3.8-slim-bullseye
 
 # Install the notebook package
 RUN pip install --no-cache --upgrade pip && \
