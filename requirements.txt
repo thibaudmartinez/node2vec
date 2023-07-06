@@ -1,5 +1,5 @@
 numpy==1.22.4
-scipy==1.7.3
+scipy==1.10.0
 gensim==3.8.3
 networkx==2.6.3
 pybind11==2.9.0
