@@ -128,7 +128,7 @@ The implementation consists of a backend written in C++ linked to a Python API."
     install_requires=[
         "pybind11>=2.9.0",
         "numpy==1.22.4",
-        "scipy==1.7.3",
+        "scipy==1.10.0",
         "gensim==3.8.3",
         "networkx==2.6.3",
         "psutil==5.9.0",
